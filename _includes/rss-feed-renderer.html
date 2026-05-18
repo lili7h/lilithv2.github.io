@@ -1,0 +1,41 @@
+{% comment %}
+
+RSS Feed renderer - expects RSS version 2.0 in XML - but may work with other versions.
+
+Include Inputs:
+    rss_url: str = The URL to fetch the RSS feed from. I.e. bsky.app/profile/did:<...>/rss
+    container_id: str = The ID of the div container that the RSS feed is populated into.
+
+{% endcomment %}
+
+{% capture random_div_id %}{{ random_hex_string }}{% endcapture %}
+
+{% assign url = include.rss_url %}
+{% assign div_id = include.container_id | default: random_div_id %}
+
+<script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+        const url = "{{ url }}";
+        const request = fetch(url);
+        request.then((response) => {
+            try {
+                if (!reponse.ok) {
+                    throw new Error(`Attempting to fetch ${url} failed. Response status: ${response.status}`);
+                }
+
+                const result = response.text
+                console.log(result);
+            } catch (error) {
+                console.error(error.message);
+            }
+        });
+    });
+</script>
+
+<!-- Container for rendering RSS feed items from URL: {{ url }} -->
+<div id="{{ div_id }}">
+    <!-- Will be replaced by the content of the RSS feed -->
+
+    <p>No content loaded yet...</p>
+</div>
+<!-- End RSS container for URL: {{ url }} -->

@@ -1,0 +1,18 @@
+
+
+{% assign url = include.path %}
+{% assign alt = include.alt %}
+{% assign styles = include.styles %}
+{% assign width = include.width_perc | default: "100" %}
+
+{% capture src %}src="{{ url }}"{% endcapture %}
+{% capture class %}class="preview-img{% if page.image.no_bg %}{{ ' no-bg' }}{% endif %}"{% endcapture %}
+{% capture alt_attr %}alt="{{ alt | xml_escape | default: "Preview Image" }}"{% endcapture %}
+{% capture custom_style %}style="{{ styles }}"{% endcapture %}
+
+<div class="mt-3 mb-3">
+    <img {{ src }} {{ class }} {{ alt_attr }} {% unless include.no_specify_width %}w="{{ width }}%"{% endunless %} {{ lqip }} {{ custom_style }}>
+    {%- if alt -%}
+        <figcaption class="text-center pt-2 pb-2">{{ alt }}</figcaption>
+    {%- endif -%}
+</div>

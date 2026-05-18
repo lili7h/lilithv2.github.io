@@ -1,0 +1,46 @@
+{% comment %}
+
+Renders a 2 column image gallery using the provided gallery object. 
+The gallery object is a list of dicts with pattern:
+```
+[
+    {
+        path: "/path/to/image",
+        alt: "alt text for image",
+    },
+    {
+        path: "/path/to/image",
+        alt: "alt text for image",
+    },
+    ...
+]
+```
+
+{% endcomment %}
+
+{% assign gallery = include.image_gallery %}
+
+<div class="image-grid-row">
+{% assign gallery_size = gallery | size %}
+{% assign first_half = gallery_size | divided_by: 2 %}
+<div class="image-grid-column">
+{% for image in gallery limit: first_half %}
+
+<div class="image-grid-item-div">
+<img src="{{ image.path }}" alt="{{ image.alt }}" loading="lazy">
+<figcaption class="text-center">{{ image.alt }}</figcaption>
+</div>
+
+{% endfor %}
+</div>
+<div class="image-grid-column">
+{% for image in gallery limit: first_half offset: continue %}
+
+<div class="image-grid-item-div">
+<img src="{{ image.path }}" alt="{{ image.alt }}" loading="lazy">
+<figcaption class="text-center">{{ image.alt }}</figcaption>
+</div>
+
+{% endfor %}
+</div>
+</div>

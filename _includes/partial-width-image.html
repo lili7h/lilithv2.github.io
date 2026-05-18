@@ -1,0 +1,14 @@
+
+
+{% assign url = include.path %}
+{% assign alt = include.alt %}
+{% assign width = include.width | default: "50%" %}
+{% assign left = include.left | default: false %}
+{% assign right = include.right | default: false %}
+
+{% capture src %}src="{{ url }}"{% endcapture %}
+{% capture alt_attr %}alt="{{ alt | xml_escape | default: "Preview Image" }}"{% endcapture %}
+{% capture custom_style %}style="{{ include.styles }}"{% endcapture %}
+
+
+<img {{ src }} {{ alt_attr }} {{ lqip }} {{ custom_style }} loading="lazy">

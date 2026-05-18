@@ -1,0 +1,40 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+
+.image-grid-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.image-grid-column {
+    flex: 50%;
+    padding: 0 4px;
+
+    a {
+        margin-top: 0rem !important;
+    }
+}
+
+.image-grid-column img {
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.image-grid-item-div {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: var(--card-bg);
+}
+
