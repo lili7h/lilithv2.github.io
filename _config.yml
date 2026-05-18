@@ -233,4 +233,4 @@ plugins_dir: ./_plugins
 jekyll_xml:
   - data: bsky_rss
     source: "https://bsky.app/profile/did:plc:zcxjxvjfhujwf2nsoi4mc7aw/rss"
-    cache: true
+    cache: false
