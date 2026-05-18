@@ -15,3 +15,5 @@ gem "wdm", "~> 0.2.0", :platforms => [:windows]
 gem "json"
 gem "activesupport"
 gem "jekyll_random_hex"
+gem "rss"
+gem "safe_yaml"
