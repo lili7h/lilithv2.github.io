@@ -28,7 +28,7 @@ gallery:
 {: .text-center}
 
 Hello there my pretty little pets~! I am Lilith, the "whatever the fuck I want to be" horned demon wolf. I do tech and cybersec by day, and horny furry shit by night. If you would like to find me, please use the socials links in the bottom left ♡♡
-{: style="text-align: justify" }
+{: style="text-align: justify;" }
 
 I am a 20-something, queercoded, villanious therian, seeking Korps induction.
 

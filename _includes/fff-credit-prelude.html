@@ -1,0 +1,28 @@
+{% comment %}
+The short prelude segment before any chapter in the Fennecs, Firearms and Fairybread tale.
+
+Inputs:
+    content_warning: list[str] = A list of strings of the content warnings for this chapter. I.e. ["Guns", "Violence", "Death", "Gore"]
+{% endcomment %}
+
+{% assign cw = include.content_warning %}
+{% assign cw_len = cw | size %}
+{% if cw_len > 1 %}
+    {% assign plural_warning = "s" %}
+{% else %}
+    {% assign plural_warning = "" %}
+{% endif %}
+{% if cw %}
+
+{%- capture cw_content -%}{{- cw | join: ", " -}}{%- endcapture -%}
+
+**Content Warning{{ plural_warning }}**: *{{ cw_content | strip_newlines }}*
+{: .cw-spoiler-text}
+
+{% endif %}
+
+{%- capture bsky_icon -%}{%- include fa-icon.html name="bluesky" category="fa-brands" -%}{%- endcapture -%}
+{%- capture google_icon -%}{%- include fa-icon.html name="google-drive" category="fa-brands" -%}{%- endcapture -%}
+
+This is an unofficial, non-canon story set in the wonderful and terrible Korps universe authored by {{ bsky_icon -}}[@korpspropaganda.bsky.social](https://bsky.app/profile/korpspropaganda.bsky.social). I will forever be a hopeless fan-dog-girl for Karen and all the authors of the [Monster Fucker Book Club](https://monsterfuckerbook.club/). If you would like to understand more about this universe, you can read the {{ google_icon -}}[Brief Korps Primer](https://docs.google.com/document/u/0/d/1fpS0SLaR94LP8rrXpkNZzj7_WurAyX4xzSdsLoVIPpE) or read some of the AMAZING canonical stories from this universe over in the {{ google_icon -}}[MFBC Korps Shared Story Timeline](https://docs.google.com/document/u/0/d/1aVmqOxpfNignSgrxLqfXFEIthe6v4hJtJTRlSssHjrQ). Additionally, you may find more unofficial/non-canon tales like this one in the {{ google_icon -}}[KEU Public Index](https://docs.google.com/document/u/0/d/1rHSOJnoKgLdwEUUs18nob-7m-sW7D6HGRSKo4hwqf14). My own introduction to this universe was through {{ bsky_icon -}}[@syntaxtakes.bsky.social](https://bsky.app/profile/syntaxtakes.bsky.social)’s amazing Redline’s Downfall Book 1: Induction. Though I would be remiss to mention the equivalently inspiring writing of {{ bsky_icon -}}[@runafjord.bsky.social](https://bsky.app/profile/runafjord.bsky.social) and her To Crack a Geode Book 1 and 2: Dissolution and Crystallization. Thank you all, especially to those I have not named here, for you will forever be a part of my queer identity. I commit all my future villainy in your honour.
+{: style="text-align: justify;" }

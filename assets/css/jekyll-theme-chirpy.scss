@@ -38,3 +38,19 @@
     background: var(--card-bg);
 }
 
+.cw-spoiler-text {
+    em {
+        background: var(--text-color);
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-bottom: 2px;
+        padding-top: 2px;
+        padding-right: 10px;
+
+        transition: background 0.25s;
+    }
+
+    em:hover {
+        background: var(--main-bg);
+    }
+}

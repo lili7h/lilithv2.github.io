@@ -1,0 +1,14 @@
+{% comment %}
+
+A helper include for placing Fontawesome Icons in posts/articles.
+
+Inputs:
+    name: str = The name as per the FontAwesome collection minus the 'fa' prefix. I.e. angle-up 
+
+    category: str = The category of icon. Defaults to 'fas'. Another example is 'fa-brands'.
+{% endcomment %}
+
+{%- assign icon_name=include.name -%}
+{%- assign icon_class=include.category | default: "fas" -%}
+
+<i class="{{ icon_class }} fa-{{ icon_name }}" />
