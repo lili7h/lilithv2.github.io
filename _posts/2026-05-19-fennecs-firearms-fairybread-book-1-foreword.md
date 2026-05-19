@@ -23,7 +23,7 @@ media_subpath: '/posts/fennecs_firearms_fairybread_b1_foreword'
 
 {% include fff-credit-prelude.html %}
 
-This tale features a shameless self-insert - my [per/fur]sona of Lilith. My therian heart and sole lives in this character, and I could not avoid writing about ~~her~~me in my first foray into fiction. Lilith, as you may note, is *not* a Fennec, but rather a horned demon wolf. This story also features a character - this one *is* a Fennec! - that is heavily inspired by a friend of mine who has no idea I am even writing this. This friend was one of the first 'real' furries I ever met, and was the catalyst that changed my world. 
+This tale features a shameless self-insert - my [per/fur]sona of Lilith. My therian heart and soul lives in this character, and I could not avoid writing about ~~her~~me in my first foray into fiction. Lilith, as you may note, is *not* a Fennec, but rather a horned demon wolf. This story also features a character - this one *is* a Fennec! - that is heavily inspired by a friend of mine who has no idea I am even writing this. This friend was one of the first 'real' furries I ever met, and was the catalyst that changed my world. 
 {: style="text-align: justify;" }
 
 ### Korpsigin Australia
