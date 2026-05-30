@@ -154,6 +154,12 @@ paginate: 10
 # The base URL of your site
 baseurl: ""
 
+category_listings:
+  fennecs-firearms-and-fairybread:
+    reverse: true
+  ardat-resurgence:
+    reverse: true
+
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
@@ -221,7 +227,7 @@ exclude:
 jekyll-archives:
   enabled: [categories, tags]
   layouts:
-    category: category
+    category: category-custom
     tag: tag
   permalinks:
     tag: /tags/:name/

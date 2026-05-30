@@ -1,19 +1,17 @@
 ---
-title: "Fennecs, Firearms and Fairybread: Book 1 - Foreword"
+title: "Fennecs, Firearms and Fairybread: Introduction"
 description: >-
-    A short foreward and setting overview for my experimental, non-canonical tale set in the Korps universe.
+    A short foreward and setting overview for my experimental, non-canonical tales set in the Korps universe.
     Fennecs, Firearms and Fairybread is Lilith's initial foray into writing Queer fiction.
 author: Lilith
 date: 2026-05-19 00:00:00 +1000
-categories: ["Korps", "Fennecs, Firearms and Fairybread"]
-tags: ["Korps", "Fiction", "FFF Book 1", "Foreword", "Lilith"]
+categories: ["Fennecs, Firearms and Fairybread"]
+tags: ["Korps", "Fennecs, Firearms and Fairybread"]
 pin: true
-media_subpath: '/posts/fennecs_firearms_fairybread_b1_foreword'
+media_subpath: '/posts/fennecs_firearms_fairybread_intoduction'
 ---
 
 ## Fennecs, Firearms and Fairybread
-
-### Book 1: A Korpsigin Story
 
 ### Foreword
 {: .text-center}
@@ -23,7 +21,7 @@ media_subpath: '/posts/fennecs_firearms_fairybread_b1_foreword'
 
 {% include fff-credit-prelude.html %}
 
-This tale features a shameless self-insert - my [per/fur]sona of Lilith. My therian heart and soul lives in this character, and I could not avoid writing about ~~her~~me in my first foray into fiction. Lilith, as you may note, is *not* a Fennec, but rather a horned demon wolf. This story also features a character - this one *is* a Fennec! - that is heavily inspired by a friend of mine who has no idea I am even writing this. This friend was one of the first 'real' furries I ever met, and was the catalyst that changed my world. 
+This tale features a shameless self-insert - my [per/fur]sona of Lilith. My therian heart and soul lives in this character, and I could not avoid writing about ~~her~~ me in my first foray into fiction. Lilith, as you may note, is *not* a Fennec, but rather a horned demon wolf. This story also features a character - this one *is* a Fennec! - that is heavily inspired by a friend of mine who has no idea I am even writing this. This friend was one of the first 'real' furries I ever met, and was the catalyst that changed my world. 
 {: style="text-align: justify;" }
 
 ### Korpsigin Australia
